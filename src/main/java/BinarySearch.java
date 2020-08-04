@@ -15,19 +15,6 @@ public class BinarySearch {
 //    System.out.println(binarySearch(arr, 100));
     System.out.println(findArrayElement(arr, randomNumber));//linear time O(n)
     System.out.println(binarySearch(arr, randomNumber));    //logarithmic(log) time O(log n)
-
-    List<Integer> arrayList = new ArrayList();
-    List<Integer> linkedList = new LinkedList();
-    for (int i = 0; i <= 10000000; i++) {
-      arrayList.add(i);
-      linkedList.add(i);
-    }
-    long startTime = System.nanoTime();
-    arrayList.contains(9999999);
-    System.out.println(System.nanoTime() - startTime);
-    startTime = System.nanoTime();
-    linkedList.contains(9999999);
-    System.out.println(System.nanoTime() - startTime);
   }
 
   static int findArrayElement(int[] arr, int element) {
